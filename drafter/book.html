@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css">
+   <link type="text/css" rel="stylesheet" href="css/jquery.tocify.css" />
+   <link rel="stylesheet" href="css/styles.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+   <script src="js/jquery.tocify.min.js"></script>
+   <script type="text/javascript" src="js/scripts.js"></script>
+   <!--<link rel="shortcut icon" href="favicon.ico" />-->
+   <title></title>
+   <script>
+   function startRefresh() {
+      location.reload();
+   }
+   /* http://gregfranko.com/jquery.tocify.js/ */
+   $(function() {
+      var timeout_ms = 15*1000;
+      setTimeout(startRefresh, timeout_ms);
+	  var toc = $("#toc").tocify().data("toc-tocify");
+	  toc.setOptions({"context": "body",});
+   });
+   </script>
+</head>
+<!-- 
+Book consists of [HTML5?]: 
+- part           [X]
+- chapter        [X]
+- section        [V]
+- subsection     [X]
+- paragraph      [V]
+- subparagraph   [V]
+-->
+<body>
+<div class="container">
+<div class="row">
+<div id="outline" class="col-sm-3">
+   <div id="toc" class="tocify"></div>
+</div>
+<div id="content" class="col-sm-9">
+   <div id="text">
+      <h1>Draft</h1>
+<!--
+<section>
+ <h2>section heading</h2>
+  <p>paragraph</p>
+  <p>paragraph</p>
+  <p>...</p>
+</section>
+-->
+<!-- /WRITE HERE  -->
+<section>
+ <h2>section heading</h2>
+  <p>paragraph</p>
+  <p>paragraph</p>
+  <p>...</p>
+</section>
+<!--  WRITE HERE/ -->
+</div><!-- "text" -->
+</div><!-- "content" -->
+</div><!-- "row" -->
+</div><!-- "container" -->
+</body>
+</html>
